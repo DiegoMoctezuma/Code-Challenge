@@ -7,7 +7,7 @@
 		"test": "jest",
 		"linter": "node ./node_modules/eslint/bin/eslint.js .",
 		"linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
-		"server": "node ./lib/sever.js"
+		"server": "node ./lib/server.js"
 	},
 	"repository": {
 		"type": "git",
