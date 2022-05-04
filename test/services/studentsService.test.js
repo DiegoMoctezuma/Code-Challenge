@@ -8,4 +8,10 @@ describe("Pruebas de EstudentsService", () => {
 
 		expect(haveCertification).toContain("Todd@visualpartnership.xyz");
 	});
+	test("2. Filtro de estudiantes por creditos", () => {
+		const students = Reader.readJsonFile("./test/services/test.json");
+		const haveCredits = EstudentsService.getCredits(students);
+
+		expect(haveCredits[0].credits).toBeGreaterThanOrEqual(500);
+	});
 });
